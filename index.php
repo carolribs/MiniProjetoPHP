@@ -6,7 +6,7 @@ session_start();
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Cadastro</title>
+        <title>Cadastro_Produtos</title>
     </head>
     
     
