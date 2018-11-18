@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
 session_start();
+
+//include_once 'conexao.php';
 include_once("conexao.php");
 ?>
 <html>
@@ -23,7 +25,14 @@ include_once("conexao.php");
         $result_usuarios = "SELECT * FROM db_produtos_php";
         $resultado_usuarios = mysqli_query($conn, $result_usuarios);
         while($row_usuario = mysqli_fetch_assoc($resultado_usuarios)){
-            echo $row_usuario['id'];
+            echo "Id:" . $row_usuario['id']. "<br>";
+            echo "Produto:" . $row_usuario['produto']. "<br>";
+            echo "Código:" . $row_usuario['codigo']. "<br>";
+            echo "Categoria:" . $row_usuario['categoria_id']. "<br>";
+            echo "Descrição:" . $row_usuario['descricao']. "<br>";
+            echo "Valor da compra:" . $row_usuario['valor_compra']. "<br>";
+            echo "Valor da venda:" . $row_usuario['valor_venda']. "<hr>";
+           
         }
         ?>
      
