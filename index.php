@@ -12,7 +12,7 @@ session_start();
     
     <body>
         <fieldset>
-        <h1>Cadastro de produtos</h1>
+        <h1> Cadastro de produtos </h1>
         <?php
         
         if(isset($_SESSION['msg'])){
