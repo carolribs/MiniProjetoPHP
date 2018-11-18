@@ -9,7 +9,7 @@ $(function(){
 			var dados = {
 				palavra : pesquisa
 			}		
-			$.post('busca.php', dados, function(retorna){
+			$.post('buscaPHP.php', dados, function(retorna){
 				//Mostra dentro da ul os resultado obtidos 
 				$(".resultado").html(retorna);
 			});

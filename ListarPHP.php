@@ -9,12 +9,24 @@ include_once("conexao.php");
     <head>
         <meta charset="UTF-8">
         <title>Listar_Produtos</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
     </head>
     
     
     <body>
+       
+        
+        
         <fieldset>
-        <h1> Listar Produtos </h1>
+        <center><navlistar id = "menulistar">
+        <li><a href="TelaPrincipalPHP.php">Menu Inicial</a><br></li>
+        <li><a href="index.php">Cadastrar</a><br></li>
+        <li><a href="PesquisaPHP.php">Pesquisar</a><br></li>
+         </center></navlistar> 
+
+            
+           
+            <center><h1> Produtos </h1></center>
         <?php
         
         if(isset($_SESSION['msg'])){
@@ -31,8 +43,9 @@ include_once("conexao.php");
             echo "Categoria:" . $row_usuario['categoria_id']. "<br>";
             echo "Descrição:" . $row_usuario['descricao']. "<br>";
             echo "Valor da compra:" . $row_usuario['valor_compra']. "<br>";
-            echo "Valor da venda:" . $row_usuario['valor_venda']. "<hr>";
-           
+            echo "Valor da venda:" . $row_usuario['valor_venda']."<br>";
+            echo "<a href ='EditarPHP.php?id=" . $row_usuario['id']."'>Editar</a>"."<br></br>";
+            echo "<a href ='ExcluirPHP.php?id=" . $row_usuario['id']."'>Excluir</a><hr>";
         }
         ?>
      

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+
+bory {
+    background-color: #87CEFA;
+    color: rgba(0,0,0,1);
+    
+    
+}
+P{
+    text-align: justify;
+    text-indent: 50px;
+}
+/*formatação do menu*/
+
+nav#menu{
+    display: block;
+    display: table-cell;
+}
+
+nav#menu ul{
+    list-style:none;
+    tex-transform: uppercase;
+}
+nav#menu li{
+    display: inline-block;
+    background-color:#d3d3d3;
+    padding: 10px;
+    margin: 5px;
+    
+}
+nav#menu li:hover{
+    background-color: #70DBDB;
+}
+nav#menu a{
+    color: #000000;
+}
+nav1#menu1{
+   margin: 0 auto;  
+}
+div.margem {
+    
+}
+body {
+   margin-top:10px; 
+   margin-right:500px;
+   /*margin-bottom:200px;*/
+   margin-left:500px;
+   /*margin:50px;*/
+   /*display: block;*/
+   
+}
+nav3#menu3{
+    display: block;
+    display: table-cell;
+}
+navlistar#menulistar li{
+    display: inline-block;
+    background-color:#d3d3d3;
+    padding: 10px;
+    margin: center;
+}
+nav8#menu8 li{
+    display: inline-block;
+    background-color:#d3d3d3;
+    padding: 10px;
+    margin: center;
+}
+nav1#menu1 li{
+    display: inline-block;
+    background-color:#d3d3d3;
+    padding: 10px;
+    margin: center;
+    
+}
+nav6#menu6 li{
+    display: inline-block;
+    background-color:#d3d3d3;
+    padding: 10px;
+    margin: center;
+}
+
+nav1#menu1 li:hover{
+    background-color: #70DBDB;
+}
+nav6#menu6 li:hover{
+    background-color: #70DBDB;
+}
+nav8#menu8 li:hover{
+    background-color: #70DBDB;
+}
+
+navlistar#menulistar li:hover{
+    background-color: #70DBDB;
+}
